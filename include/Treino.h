@@ -1,3 +1,4 @@
+#pragma once
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -8,6 +9,12 @@ private:
     string horario;
 
 public:
+    Treino(int numero, string horarios);
+    void AlterarNDT(int NewTreinos);
+    void AlterarHorario(string NewHorario);
+    void VerTreinos();
+    void VerHorarios();
+    
 //criar um construtor
 // criar getters e setters aqui ou em um .cpp
 };
