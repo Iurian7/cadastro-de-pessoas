@@ -1,3 +1,4 @@
+#pragma once
 #include <bits/stdc++.h>
 #include "Endereco.h"
 #include "DataNascimento.h"
@@ -16,7 +17,14 @@ protected:
     int peso;
 
 public:
-    //criar um construtor
-    //criar métodos como apresentar
-    //criar getters e setters
+    Pessoa(int Id, string Nome, string Sobrenome, Endereco &e, DataNascimento &d, int Idade, int Altura, int Peso);
+    ~Pessoa();
+    void DadosPessoais();
+    string NomeCompleto();
+    void AlterarIdade(int IdadeN);
+    void AlterarAltura(int AlturaN);
+    void AlterarPeso(int PesoN);
+
 };
+
+// criar getters setters
